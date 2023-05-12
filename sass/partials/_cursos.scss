@@ -1,0 +1,50 @@
+#cursos {
+	width: 100%;
+	position: relative;
+	text-align: left;
+	padding: 50px 0px 100px;
+	h2 {
+		color: $secundary-color;
+		font-size: $fontSize-title;
+		font-weight: 700;
+		position: relative;
+		margin-bottom: 70px;
+		&::after {
+			width: 65%;
+			height: 2px;
+			position: absolute;
+			content: "";
+			right: 10px;
+			top: 50%;
+			border: 1px solid $secundary-color;
+		}
+	}
+	.card-cursos {
+		border-radius: 4px;
+		position: relative;
+		img {
+			width: 100%;
+			border-radius: 2px 2px 0 0;
+		}
+		.cont-info {
+			padding: 14px;
+			background: $card-color;
+			transition: 0.2s;
+			border-radius: 0 0 2px 2px;
+			&:hover {
+				background: $primary-color;
+				box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+				transform: scale(0.9);
+			}
+			h3 {
+				font-size: 18px;
+				color: $secundary-color;
+				font-weight: 600;
+			}
+			p {
+				@include parrafo;
+				text-decoration: none;
+			}
+		}
+	}
+}

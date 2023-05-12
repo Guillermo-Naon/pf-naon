@@ -1,0 +1,76 @@
+$color_1: var(--secundary-color);
+$color_2: var(--text-color);
+$background-color_1: var(--primary-color);
+
+#servicios {
+	width: 100%;
+	position: relative;
+	padding: 50px 0 100px;
+	text-align: center;
+	h2 {
+		color: $secundary-color;
+		font-size: $fontSize-title;
+		font-weight: 700;
+	}
+	p {
+		@include parrafo;
+	}
+	.row {
+		padding-top: 70px;
+	}
+	.card-service {
+		background: $card-color;
+		border-radius: 4px;
+		position: relative;
+		padding-top: 50px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 40px;
+		text-align: left;
+		transition: .4s;
+		max-width: 306px;
+		margin: 0 auto;
+		margin-bottom: 70px;
+		&:hover {
+			background-color: $primary-color;
+			transform: scale(1.1);
+			box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+		}
+		img {
+			background: $secundary-color;
+			width: 70px;
+			padding: 15px;
+			border-radius: 4px;
+			position: absolute;
+			top: -30px;
+			left: 30px;
+		}
+		h3 {
+			text-align: right;
+			color: $secundary-color;
+			font-size: 40px;
+			margin-bottom: 25px;
+		}
+		h4 {
+			color: $secundary-color;
+			font-weight: 500;
+			font-size: 18px;
+			text-align: left;
+			margin-bottom: 25px;
+		}
+		p {
+			@include parrafo;
+			text-align: left;
+			line-height: 25px;
+			margin-bottom: 15px;
+		}
+		a {
+			color: $secundary-color;
+			display: inline-block;
+			text-align: left;
+			font-size: $fontSize-parrafo;
+			text-decoration: none;
+			border-bottom: $secundary-color;
+		}
+	}
+}

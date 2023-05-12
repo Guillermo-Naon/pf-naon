@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p, a, li, td, input, label {
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background: #1f212c;
+}
+
+header {
+  padding-top: 40px;
+}
+
+nav.bg-gym {
+  background: #1f212c;
+}
+nav.bg-gym .navbar-brand img {
+  width: 200px;
+}
+nav.bg-gym ul li {
+  margin-top: 14px;
+}
+nav.bg-gym ul li a {
+  color: #fff;
+  position: relative;
+  font-size: 20px;
+  margin: 0 12px;
+}
+nav.bg-gym ul li a::after {
+  width: 0%;
+  height: 3px;
+  background: transparent;
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  transition: 0.4s;
+}
+nav.bg-gym ul li a:hover {
+  color: #2c4ab8;
+}
+nav.bg-gym ul li a:hover::after {
+  background: #2c4ab8;
+  width: 40%;
+}
+
+#hero {
+  padding: 100px 0px 140px;
+}
+#hero .cont-foto {
+  position: relative;
+  width: 400px;
+}
+#hero .cont-foto img {
+  z-index: 2;
+  position: relative;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+#hero .cont-foto::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 40px;
+  background: #2c4ab8;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+#hero .cont-info {
+  padding-left: 60px;
+}
+#hero .cont-info h1 {
+  color: #fff;
+  font-size: 60px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+#hero .cont-info h1 span {
+  border-bottom: 12px solid white;
+  border-radius: 2px;
+}
+#hero .cont-info p {
+  font-size: 16px;
+  color: #808080;
+  margin-bottom: 60px;
+}
+#hero .cont-info .destacada h2 {
+  color: #fff;
+  font-size: 40px;
+}
+#hero .cont-info .destacada p {
+  font-size: 14px;
+}
+
+.circlebg {
+  position: absolute;
+  padding-left: 350px;
+}
+
+#servicios {
+  width: 100%;
+  position: relative;
+  padding: 50px 0 100px;
+  text-align: center;
+}
+#servicios h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+#servicios p {
+  font-size: 16px;
+  color: #808080;
+}
+#servicios .row {
+  padding-top: 70px;
+}
+#servicios .card-service {
+  background: #292c36;
+  border-radius: 4px;
+  position: relative;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  text-align: left;
+  transition: 0.4s;
+  max-width: 306px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+#servicios .card-service:hover {
+  background-color: #2c4ab8;
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#servicios .card-service img {
+  background: #fff;
+  width: 70px;
+  padding: 15px;
+  border-radius: 4px;
+  position: absolute;
+  top: -30px;
+  left: 30px;
+}
+#servicios .card-service h3 {
+  text-align: right;
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+#servicios .card-service h4 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+#servicios .card-service p {
+  font-size: 16px;
+  color: #808080;
+  text-align: left;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+#servicios .card-service a {
+  color: #fff;
+  display: inline-block;
+  text-align: left;
+  font-size: 16px;
+  text-decoration: none;
+  border-bottom: #fff;
+}
+
+#contacto {
+  width: 100%;
+  padding: 50px 0 230px;
+}
+
+section.bg-contacto {
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 70px;
+  background-color: #2c4ab8;
+}
+
+#comentarios {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  padding: 60px;
+  padding-bottom: 320px;
+  color: #fff;
+}
+#comentarios .carousel-item {
+  background: #2c4ab8;
+  padding: 80px 40px;
+  border-radius: 10px;
+}
+#comentarios .carousel-item h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#planes {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
+  padding: 40px 0px 100px;
+}
+#planes h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#planes p {
+  font-size: 16px;
+  color: #808080;
+}
+#planes .lapso {
+  background: #292c36;
+  margin-top: 50px;
+  padding: 100px 50px;
+  border-radius: 20px;
+  text-align: left;
+  width: 40%;
+}
+#planes .lapso ul {
+  border: 0 transparent;
+  margin-bottom: 50px;
+  background: #3f434f;
+  max-width: 220px;
+  padding: 10px;
+  border-radius: 50px;
+}
+#planes .lapso ul li button {
+  background: transparent;
+  color: #fff;
+  border-radius: 30px;
+  width: 100px;
+  border: 0 transparent;
+}
+#planes .lapso ul li button.active {
+  background: #2c4ab8;
+}
+#planes .lapso p {
+  margin-bottom: 40px;
+  position: relative;
+}
+#planes .lapso p::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 10px;
+  top: 5px;
+  right: 0;
+}
+#planes .lapso p:nth-child(1)::after {
+  background: orangered;
+}
+#planes .lapso p:nth-child(2)::after {
+  background: orangered;
+}
+#planes .lapso p:nth-child(3)::after {
+  background: orangered;
+}
+#planes .lapso p.blueCheck::after {
+  background: orangered;
+}
+#planes .plan {
+  margin: 50px;
+  margin-left: 70px;
+}
+#planes .plan .starter {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 25px;
+  text-align: center;
+  width: 300px;
+  margin-left: 150px;
+}
+#planes .plan .starter:hover {
+  background: #2c4ab8;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#planes .plan .starter button {
+  background-color: #2c4ab8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border-radius: 50px;
+}
+#planes .plan .starter h2 {
+  margin-top: 0;
+}
+#planes .plan .starter p {
+  color: #aaa;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+#cursos {
+  width: 100%;
+  position: relative;
+  text-align: left;
+  padding: 50px 0px 100px;
+}
+#cursos h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 70px;
+}
+#cursos h2::after {
+  width: 65%;
+  height: 2px;
+  position: absolute;
+  content: "";
+  right: 10px;
+  top: 50%;
+  border: 1px solid #fff;
+}
+#cursos .card-cursos {
+  border-radius: 4px;
+  position: relative;
+}
+#cursos .card-cursos img {
+  width: 100%;
+  border-radius: 2px 2px 0 0;
+}
+#cursos .card-cursos .cont-info {
+  padding: 14px;
+  background: #292c36;
+  transition: 0.2s;
+  border-radius: 0 0 2px 2px;
+}
+#cursos .card-cursos .cont-info:hover {
+  background: #2c4ab8;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transform: scale(0.9);
+}
+#cursos .card-cursos .cont-info h3 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+#cursos .card-cursos .cont-info p {
+  font-size: 16px;
+  color: #808080;
+  text-decoration: none;
+}
+
+footer {
+  padding: 30px;
+  background: #292c36;
+  text-align: center;
+  color: #fff;
+}
+footer img {
+  max-width: 220px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 990px) {
+  header nav button.navbar-toggler {
+    background: #2c4ab8;
+  }
+  #hero .cont-foto {
+    width: 100%;
+    padding-right: 300px;
+  }
+  #hero .cont-foto::before {
+    left: 0;
+  }
+  #hero .cont-foto img {
+    width: 290px;
+  }
+  #hero .cont-info h1 {
+    margin-top: 10px;
+  }
+  #hero .cont-info h1 span {
+    border-bottom: 4px solid #fff;
+  }
+  .circlebg {
+    width: 0%;
+  }
+  div.col-md-6 h4 {
+    margin-top: 10px;
+  }
+  nav.bg-gym ul li a:hover::after {
+    left: 0px;
+  }
+  #cursos h2::after {
+    width: 45%;
+    top: 30%;
+  }
+  #cursos .card-cursos .cont-info {
+    margin-bottom: 20px;
+  }
+  #carouselExampleSlidesOnly p {
+    font-size: 12px;
+  }
+  #comentarios .carousel-item {
+    padding: 20px;
+  }
+  .clase-row {
+    width: 2px;
+  }
+  #planes .plan {
+    margin: 0px;
+    margin-left: 0px;
+  }
+  #planes .plan .starter {
+    margin: 5px;
+    margin-left: 0px;
+  }
+  #planes .lapso {
+    display: table;
+    margin-left: 50px;
+  }
+  #planes .lapso ul {
+    border-radius: 35px;
+  }
+}/*# sourceMappingURL=style.css.map */

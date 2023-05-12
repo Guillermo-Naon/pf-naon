@@ -1,0 +1,39 @@
+header {
+	padding-top: 40px;
+}
+nav.bg-gym {
+	background: $bg-body;
+	.navbar-brand {
+		img {
+			width: 200px;
+		}
+	}
+	ul {
+		li {
+			margin-top: 14px;
+			a {
+				color: $secundary-color;
+				position: relative;
+				font-size: 20px;
+				margin: 0 12px;
+				&::after {
+					width: 0%;
+					height: 3px;
+					background: transparent;
+					content: "";
+					position: absolute;
+					bottom: 2px;
+					left: 10px;
+					transition: .4s;
+				}
+				&:hover {
+					color: $primary-color;
+					&::after {
+						background: $primary-color;
+						width: 40%;
+					}
+				}
+			}
+		}
+	}
+}

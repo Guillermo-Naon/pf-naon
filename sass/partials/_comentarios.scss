@@ -1,0 +1,17 @@
+#comentarios {
+	text-align: center;
+	width: 100%;
+	position: relative;
+	padding: 60px;
+	padding-bottom: 320px;
+	color: $secundary-color;
+	.carousel-item {
+		background: $primary-color;
+		padding: 80px 40px;
+		border-radius: 10px;
+		h3 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+	}
+}
